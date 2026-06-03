@@ -8,9 +8,11 @@
     color: #243e63;
 }
 
+
+
 .nav {
     display: flex;
-    justify-content: space_between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -41,23 +43,30 @@ li {
 
 .nav__links {
     display: flex;
-    justify-content: space-around;
-    width: 60%;
+    justify-content: space-between;
+    width: 50%;
+
 }
 
 .nav__link, 
 .nav__link-login,
 .nav__link--primary {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 }
 
-.nav__container {
+.row {
     width: 100%;
-    margin: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__row {
+    margin: 40px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -71,6 +80,14 @@ li {
     background-color: #6415ff;
     color: #fff;
 }
+
+/*
+
+HEADER
+
+*/
+
+
 
 
 
