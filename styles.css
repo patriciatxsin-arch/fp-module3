@@ -8,12 +8,16 @@
     color: #243e63;
 }
 
+.purple {
+    color: #6415ff;
+}
 
-
-.nav {
+nav {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 16px;
 }
 
 .nav__logo--container {
@@ -24,7 +28,6 @@
 .nav__logo {
     width: 40px;
     height: 40px;
-    margin-left: 20px;
 }
 
 .nav__logo--title {
@@ -52,7 +55,7 @@ li {
 .nav__link-login,
 .nav__link--primary {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -63,10 +66,8 @@ li {
 }
 
 .nav__row {
-    margin: 40px 20px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -87,8 +88,12 @@ HEADER
 
 */
 
-
-
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
 
 
 
