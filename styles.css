@@ -217,10 +217,13 @@ FEATURES
 }
 
 .section__title {
+    width: 100%;
+    max-width: 500px;
+    margin: 56px 0 48px 0;
     font-size: 48px;
     font-weight: 900;
     color: rgba(36, 62, 99);
-    line-height: 1.5;
+    line-height: 1.20;
     margin: 16px 0;
     letter-spacing: 0.025em;
 }
@@ -228,7 +231,6 @@ FEATURES
 .section__para {
     width: 100%;
     max-width: 540px;
-    text-align: center;
     font-size: 18px;
     font-weight: 500;
     color: #7c8ba1;
@@ -245,6 +247,22 @@ FEATURES
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 80px;
+}
+
+.features__title {
+    margin: 56px 0 48px 0;
+    font-size: 48px;
+    font-weight: 900;
+    color: rgba(36, 62, 99);
+    line-height: 1.20;
+    margin: 16px 0;
+    letter-spacing: 0.025em;
+}
+
+.features__para {
+    max-width: 500px;
+    text-align: center;
+    
 }
 
 .feature__row {
@@ -283,7 +301,8 @@ QUALITY
 */
 
 .quality__row,
-.steps__row {
+.steps__row,
+.values__row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -294,28 +313,6 @@ QUALITY
 .quality__description {
     width: 100%;
     max-width: 500px;
-}
-
-.quality__title,
-.steps__title {
-    width: 100%;
-    max-width: 500px;
-    margin: 56px 0 48px 0;
-    font-size: 48px;
-    font-weight: 900;
-    color: rgba(36, 62, 99);
-    line-height: 1.20;
-    margin: 16px 0;
-    letter-spacing: 0.025em; 
-}
-
-.quality__para {
-    width: 100%;
-    font-size: 17px;
-    margin: 24px 0;
-    color: rgba(124, 139, 161);
-    line-height: 2;
-    font-weight: 500;
 }
 
 .btn {
