@@ -237,23 +237,24 @@ FEATURES
 .features {
     width: 100%;
     display: flex;
-    justify-content: ;
-    align_items: center;       
+    justify-content: space-between;
 }
 
 .features__list {
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
 }
 
 .feature__row {
+    width: calc(100% / 3);
+    margin-top: 80px;
     display: flex;
     align-items: flex-start;
 }
 
 .feature__img--wrapper {
     display: flex;
+    margin-right: 16px;
     padding: 20px;
     border: 1px solid;
     border-radius: 500px;
@@ -265,13 +266,19 @@ FEATURES
 }
 
 .feature__para {
+    width: 80%;
     font-size: 16px;
     margin-top: 16px;
-    max-width: calc(100% / 3);
     color: rgba(124, 139, 161);
     line-height: 2;
     font-weight: 500;
 }
+
+/*
+
+QUALITY
+
+*/
 
 
 
