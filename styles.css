@@ -318,7 +318,7 @@ QUALITY
 .btn {
     width: 140px;
     padding: 10px 0;
-    margin-top: 16px;
+    margin-top: 48px;
     border: none;
     border-radius: 500px;
     background-color: #6415ff;
@@ -381,14 +381,15 @@ VALUES
 
 */
 
-.values__list {
+.value__list {
     width: 100%;
     max-width: 540px;
     display: flex;
+    gap: 56px;
 }
 
 .value__title {
-    margin-top: 16px;
+    margin-top: 48px;
     display: flex;
     align-items: center;
 }
@@ -406,8 +407,6 @@ VALUES
 }
 
 .value__para {
-    width: 95%;
-    max-width: 540px;
     margin-top: 16px;
     color: #718096;
     line-height: 1.625;
