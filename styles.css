@@ -503,5 +503,35 @@ PRICING
 .plan__list {
     display: flex;
     gap: 3rem;
-    
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+
+.testimonial__middle {
+    margin-top: 3rem;
+}
+
+.testimonial__rating {
+    margin-bottom: 2rem;
+    color: rgba(246, 173, 85);
+}
+
+.testimonial__para {
+    max-width: 540px;
+}
+
+.testimonial__img {
+    width: 100%;
+    max-width: 540px;
+}
+
+.profile__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
