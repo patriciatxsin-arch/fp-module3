@@ -541,6 +541,11 @@ TESTIMONIALS
     margin-right: 12rem;
 }
 
+.testimonial__role {
+    margin-top: 8px;
+    color: #718096;
+}
+
 .testimonial__buttons {
     display: flex;
     gap: 16px;
