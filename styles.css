@@ -416,16 +416,55 @@ PRICING
     margin-bottom: 2rem;
 }
 
+.plan {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    max-width: 24rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(255 255 255);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: rgb(26 32 44);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan__stripe {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 24rem;
+    height:  0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.plan:nth-child(1) .plan__stripe,
+.plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan:nth-child(2) {
+    color: #f7fafc;
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
 .plan__top {
     display: flex;
     flex-direction: column;
-    padding: 2rem 6rem;
+    align-items: center;
+    width: 24rem;
+    padding-top: 2rem;
+    
     text-transform: uppercase;
     line-height: 1.625;
-    text-align: center;
-    border: 2px solid rgba(229, 231, 235);
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-bottom: 1px solid #a0aec0;
 }
 
 .plan__name {
@@ -437,7 +476,8 @@ PRICING
     margin: 4px 0;
 }
 
-.plan__duration {
+.plan:nth-child(1) .plan__duration,
+.plan:nth-child(3) .plan__duration {
     color: #a0aec0;
     font-size: 16px;
     letter-spacing: 0.1rem;
@@ -454,9 +494,10 @@ PRICING
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 24rem;
     padding-top: 20px;
     padding-bottom: 30px;
-    border: 2px solid rgba(229, 231, 235);
+    border-bottom: 1px solid #a0aec0;
 }
 
 .plan__target {
@@ -469,14 +510,12 @@ PRICING
 .plan__feature {
     margin-top: 20px;
     font-weight: 500;
-    color: #718096;
     line-height: 1.5;
 }
 
 .plan__bottom {
-    text-align: center;
+    width: 24rem;
     padding: 2rem 4rem;
-    border: 2px solid rgba(229, 231, 235);
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
@@ -486,10 +525,14 @@ PRICING
     padding: 10px 0;
     border: none;
     border-radius: 500px;
-    background-color: #6415ff;
     color: #fff;
     font-weight: 700;
     font-size: 14px; 
+}
+
+.plan:nth-child(2) .plan__button {
+    color: #6415ff;
+    background-color: #f7fafc;
 }
 
 .plan__list {
