@@ -17,6 +17,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
+    margin-top: 36px;
 }
 
 .nav__logo--container,
@@ -33,7 +34,7 @@ nav {
 
 .nav__logo--title,
 .footer__logo--title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 900;
     margin-left: 20px;
 }
@@ -55,6 +56,16 @@ h1 {
 p { 
     font-size: 16px;
     line-height: 1.5;
+    color: #a0aec0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.no-cursor {
+    cursor: not-allowed;
 }
 
 .nav__links {
@@ -113,20 +124,13 @@ p {
    text-align: center;
    border: none;
    color: #243e63;
-}
-
-.btn__menu--close {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    padding: 8px;
-    color: #243e63;
+   display: none;
 }
 
 .menu__backdrop {
     position: absolute;
     border: 1px solid rgb(229, 231, 235);
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
@@ -138,10 +142,21 @@ p {
     height: 50vh;
     width: 100vw;
     z-index: 100;
+    transition: opacity 300ms ease;
+    visibility: hidden;
 }
 
 .menu--open .menu__backdrop {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: #243e63;
 }
 
 .menu__lists {
@@ -155,7 +170,6 @@ p {
     font-size: 21px;
     font-weight: 600;
     color: #243e63;
-    text-decoration: none;
 }
 
 /*
@@ -163,18 +177,12 @@ p {
 HEADER
 
 */
-
 .header__description {
-    width: 100%;
-    max-width: 448px;
-    margin: 56px 0 48px 0;
+    margin: 56px 48px;
 }
 
 .header__description--para {
-    width: 100%;
-    max-width: 448px;
     margin: 32px 0;
-    font-size: 18px;
 }
 
 .header__email {
@@ -246,7 +254,7 @@ HEADER
 }
 
 .header__img {
-    width: 110%;
+    width: 100%;
 }
 
 /*
@@ -791,12 +799,50 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .nav__links {
+        display: none;
+    }
+
+    .nav__logo--title {
+        font-size: 32px;
+    }
+
+    .btn__menu {
+        display: block;
+        font-size: 24px;
+    }
+
+    .header__row {
+        display: block;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+    
+    }
+
+    .header__description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    } 
+        
+    
+
+
 
 }
 
 @media (max-width: 550px) {
     .nav__links {
         display: none;
+    }
+
+    .btn__menu {
+        display: block;
     }
 }
 
