@@ -56,7 +56,6 @@ h1 {
 p { 
     font-size: 16px;
     line-height: 1.5;
-    color: #a0aec0;
 
 }
 
@@ -186,8 +185,6 @@ HEADER
 }
 
 .header__email {
-    width: 100%;
-    max-width: 448px;
     height: 64px;
     position: relative;
     display: flex;
@@ -208,10 +205,6 @@ HEADER
     bottom: 0;
     z-index: 1;
     transition: border-color 300ms;
-}
-
-.header__email--logo {
-    width: 115%;
 }
 
 .header__email--btn {
@@ -254,7 +247,7 @@ HEADER
 }
 
 .header__img {
-    width: 100%;
+    width: 90%;
 }
 
 /*
@@ -820,15 +813,29 @@ footer {
         font-size: 40px;
     }
 
-    p {
-    
+    .header__description--para {
+        font-size: 20px;
     }
 
     .header__description {
-        display: flex;
         flex-direction: column;
         text-align: center;
     } 
+
+    .header__email {
+        width: 60vw;
+        margin: auto;
+    }
+
+    .header__email--logo {
+        width: 90vw;
+        margin-left: 4rem;
+    }
+
+    .header__img {
+        width: 85vw;
+        margin: 4rem;
+    }
         
     
 
