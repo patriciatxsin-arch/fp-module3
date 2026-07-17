@@ -51,6 +51,12 @@ nav {
     padding-top: 32px;
 }
 
+.nav__bar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav__row {
     display: flex;
     justify-content: space-between;
@@ -822,13 +828,15 @@ footer {
 
     .btn__menu {
         display: flex;
-        flex-direction: column;
     }
 
-    
-
-    
-
+    .nav__bar {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
     .row {
         display: block;
         margin-left: 7rem;
@@ -859,11 +867,16 @@ footer {
     }
 
     .header__img {
-        width: 85vw;
-        margin: 4rem;
+        width: 95%;
+        margin-top: 2rem;
     }
         
-    
+    /*
+
+    FEATURES
+
+    */
+
 
 
 
