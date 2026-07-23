@@ -52,7 +52,6 @@ nav {
 }
 
 .nav__bar {
-    width: 100vw;
     display: flex;
     justify-content: space-between;
 }
@@ -274,6 +273,7 @@ HEADER
 
 .header__img {
     width: 100%;
+    display: flex;
 }
 
 /*
@@ -823,24 +823,18 @@ footer {
     }
 
     .nav__logo--title {
-        font-size: 32px;
+        font-size: 24px;
+        letter-spacing: 1.5px;
     }
 
     .btn__menu {
         display: flex;
-    }
-
-    .nav__bar {
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        font-size: 24px;
     }
   
     .row {
-        display: block;
-        margin-left: 7rem;
         text-align: center;
+        flex-direction: column;
     }
 
     h1 {
@@ -853,7 +847,8 @@ footer {
 
     .header__description {
         width: 100%;
-
+        display: flex;
+        flex-direction: column;
     } 
 
     .header__email {
@@ -867,9 +862,10 @@ footer {
     }
 
     .header__img {
-        width: 95%;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
+
+}
         
     /*
 
