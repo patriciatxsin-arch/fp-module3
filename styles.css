@@ -662,6 +662,11 @@ PRICING
 TESTIMONIALS
 
 */
+
+.testimonial__description__wrapper {
+    display: flex;
+}
+
 .testimonial__img {
     width: 100%;
     max-width: 560px;
@@ -1068,12 +1073,26 @@ footer {
 
     .footer__columns {
         flex-wrap: wrap;
-        width: calc(100%/2);
+        justify-content: flex-start;
     }
 
     .footer__column {
-        margin: 1rem;
         text-align: left;
+        margin-right: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__copyright {
+        margin-top: 2rem;
+    }
+
+    .footer__socials {
+        margin-top: 2rem;
     }
 
 
