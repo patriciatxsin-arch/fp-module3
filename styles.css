@@ -941,6 +941,10 @@ footer {
         display: block;
     }
 
+    .step__description {
+        margin-top: 1rem;
+    }
+
     .section__title {
         font-size: 32px;
         width: 100%;
@@ -985,6 +989,7 @@ footer {
 
     .values__description {
         width: 70%;
+        margin-top: 4rem;
         margin-left: 6rem;
     }
 
@@ -997,7 +1002,79 @@ footer {
         margin-left: 3rem;
     }
 
-    
+    /*
+
+    PRICING
+
+    */
+
+    .pricing__title {
+        text-align: center;
+    }
+
+    .plan__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*
+
+    TESTIMONIALS
+
+    */
+
+    .testimonial__img--wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial__img {
+        width: 70%;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .testimonial__description {
+        width: 70%;
+        margin-top: 4rem;
+        margin-left: 6rem;
+    }
+
+    .testimonial__details {
+        margin-right: auto;
+    }
+
+    /*
+
+    START
+
+    */
+
+    .start__box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start__para {
+        margin: 2rem 0;
+    }
+
+    /*
+
+    FOOTER
+
+    */
+
+    .footer__columns {
+        flex-wrap: wrap;
+        width: calc(100%/2);
+    }
+
+    .footer__column {
+        margin: 1rem;
+        text-align: left;
+    }
 
 
 
