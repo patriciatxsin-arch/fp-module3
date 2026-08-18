@@ -663,13 +663,26 @@ TESTIMONIALS
 
 */
 
-.testimonial__description__wrapper {
+.testimonial__description--wrapper {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+    
 }
 
 .testimonial__img {
+    width: 120%;
+    margin-left: -10rem;
+}
+
+.testimonial__description {
     width: 100%;
-    max-width: 560px;
+}
+
+.testimonial__para {
+    width: auto;
 }
 
 .testimonial__middle {
@@ -1028,10 +1041,8 @@ footer {
 
     */
 
-    .testimonial__img--wrapper {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2rem;
+    .testimonial__description--wrapper {
+        flex-direction: column;
     }
 
     .testimonial__img {
