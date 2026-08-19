@@ -406,7 +406,7 @@ QUALITY
 .quality__img {
     width: 100%;
     margin-left: -2rem;
-    border: 0.5px solid rgba(124, 139, 161);
+    border: 0.5px solid #a0aec0;;
 }
 
 /*
@@ -669,7 +669,6 @@ TESTIMONIALS
     justify-content: center;
     align-items: center;
     margin-left: 10rem;
-    
 }
 
 .testimonial__img {
@@ -861,6 +860,208 @@ footer {
     margin-left: 1rem;
 }
 
+@media (max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
+
+    .nav__logo--title {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+    }
+
+    .btn__menu {
+        display: flex;
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .header__title {
+        margin: auto;
+    }
+
+    .header__description--para {
+        font-size: 16px;
+        padding: 0 10rem;
+        text-align: center;
+    }
+
+    .header__description--wrapper {
+        display: block;
+    }
+
+    .header__description {
+        width: 100%;
+    } 
+
+    .header__email {
+        width: 50vw;
+        margin: auto;
+    }
+
+    .header__email--title {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .header__email--logo {
+        width: 60vw;
+        margin-left: 14rem;
+    }
+
+    .header__img {
+        margin-top: 2rem;
+        padding: 0 10rem;
+    }
+        
+    /*
+
+    FEATURES
+
+    */
+
+    .feature__row {
+        width: calc(100% /2);
+        padding: 0 3rem;
+    }
+
+    /*
+
+    QUALITY
+
+    */
+
+    .quality__img {
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .quality__description--wrapper {
+        width: 100%;
+    }
+
+    .quality__description {
+        text-align: left;
+        padding-right: 5rem;         
+    }
+
+    /*
+
+    STEPS
+
+    */
+
+    .steps__img {
+        width: 90%;
+        margin-top: 6rem;
+    }
+
+    .step__description {
+        margin-top: 1rem;
+    }
+
+    .section__title {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .section__para {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /*
+
+    VALUES
+
+    */
+
+    .value__img {
+        width: 75%;
+        margin-left: 5rem;
+        margin-top: 15rem;
+    }
+
+    .values__description {
+        width: 90%;
+    }
+
+    .value__list {
+        flex-direction: column;
+    }
+
+    /*
+
+    PRICING
+
+    */
+
+    .pricing__title {
+        text-align: center;
+    }
+
+    .plan__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*
+
+    TESTIMONIALS
+
+    */
+
+    .testimonial__img {
+        width: 67%;
+    }
+
+    .testimonial__description {
+        display: flex;
+        flex-direction: column;
+        margin-left: -20rem;
+    }
+
+    .testimonial__top {
+        margin-bottom: -2rem;
+    }
+
+    .testimonial__details {
+        margin-right: auto;
+    }
+
+    /*
+
+    START
+
+    */
+
+    .start__box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start__para {
+        margin: 2rem 0;
+    }
+
+    /*
+
+    FOOTER
+
+    */
+
+   .footer__column {
+        margin-top: -8rem;
+   }
+
+   .footer__bottom {
+        margin-bottom: -8rem;
+   }
+}
+
 @media (max-width: 768px) {
     .nav__links {
         display: none;
@@ -875,26 +1076,19 @@ footer {
         display: flex;
         font-size: 24px;
     }
-  
-    .row {
-        text-align: center;
-    }
 
     h1 {
         font-size: 32px;
     }
 
     .header__description--para {
-        font-size: 20px;
+        font-size: 16px;
+        padding: 0 5rem;
     }
 
     .header__description--wrapper {
         display: block;
     }
-
-    .header__description {
-        width: 100%;
-    } 
 
     .header__email {
         width: 60vw;
@@ -907,8 +1101,8 @@ footer {
     }
 
     .header__img {
-        width: 90%;
-        margin-top: 2rem;
+        width: 125%;
+        margin-left: -5rem;
     }
         
     /*
@@ -933,15 +1127,14 @@ footer {
     }
 
     .quality__img {
-        width: 70%;
-        margin-right: -1rem;
-        margin-left: -1rem;
+        width: 60%;
+        margin: 0 8rem 0 9rem;
     }
 
     .quality__description {
         width: 70%;
-        margin-top: 4rem;
-        margin-left: 6rem;
+        text-align: center;
+        margin: 3rem 8rem 0 9rem;
     }
 
     /*
@@ -951,16 +1144,17 @@ footer {
     */
 
     .steps__img {
-        margin-left: 2.5rem;
-        margin-bottom: 4rem;
+        width: 70%;
+        margin: 3rem 7rem;
     }
 
     .steps__description--wrapper {
         display: block;
     }
 
-    .step__description {
+    .steps__description {
         margin-top: 1rem;
+        text-align: center;
     }
 
     .section__title {
@@ -974,7 +1168,7 @@ footer {
     }
 
     .steps__list {
-        margin: 3rem 10rem;
+        margin: 2rem 10rem;
     }
 
     .step {
@@ -1000,24 +1194,26 @@ footer {
     }
 
     .value__img {
-        width: 70%;
-        margin-left: -1rem;
-        margin-right: -1rem;
+        width: 65%;
+        margin-top: -3rem;
+        margin-left: 8rem;
+        margin-bottom: 5rem;
     }
 
     .values__description {
         width: 70%;
-        margin-top: 4rem;
-        margin-left: 6rem;
+        margin-left: 7rem;
+        padding: 0 1rem;
+        text-align: center;
     }
 
     .value__list {
         flex-direction: column;
-        margin-left: 5rem;
+        margin: 0 5rem;
     }
 
     .value__title {
-        margin-left: 3rem;
+        padding: 0 3rem;
     }
 
     /*
@@ -1047,18 +1243,14 @@ footer {
 
     .testimonial__img {
         width: 70%;
-        margin-left: -1rem;
-        margin-right: -1rem;
+        margin: 8px;
     }
 
     .testimonial__description {
-        width: 70%;
-        margin-top: 4rem;
-        margin-left: 6rem;
-    }
-
-    .testimonial__details {
-        margin-right: auto;
+        width: 90%;
+        text-align: center;
+        margin: 3rem 10rem 1rem 0;
+        padding: 8px;
     }
 
     /*
@@ -1084,13 +1276,12 @@ footer {
 
     .footer__columns {
         flex-wrap: wrap;
-        justify-content: flex-start;
+        width: 50%;
     }
 
     .footer__column {
         text-align: left;
-        margin-right: 8rem;
-        margin-bottom: 2rem;
+        padding: 5rem 1rem;
     }
 
     .footer__bottom {
@@ -1104,19 +1295,6 @@ footer {
 
     .footer__socials {
         margin-top: 2rem;
-    }
-
-
-
-}
-
-@media (max-width: 550px) {
-    .nav__links {
-        display: none;
-    }
-
-    .btn__menu {
-        display: block;
     }
 }
 
